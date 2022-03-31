@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        var x="raju";
+        
+        var telugu=parseInt(prompt());
+        var english=parseInt(prompt());
+        var social=parseInt(prompt());
+        var ps=parseInt(prompt());
+        var ns=parseInt(prompt());
+
+        var sum=add(telugu,english,social,ps,ns);
+        var avg=sum/5;
+       
+        console.log(x);
+       
+        var g=grade(avg);
+
+        function add(t,e,s,p,n)
+        {
+            var c=t+e+s+p+n;
+            return c;
+           
+        }
+        function grade(g)
+        
+        {
+            switch(true)
+            {
+             case g>=90:console.log("grade a");break;
+             case g>=70:console.log("grade b");break;
+             case g>=50:console.log("grade c");break;
+             case g>=40:console.log("grade d");break;
+             case g>=30:console.log("fail");break;
+             default:console.log("enter valid number");
+            }
+        }
+
+    </script>    
+    
+</body>
+</html>
